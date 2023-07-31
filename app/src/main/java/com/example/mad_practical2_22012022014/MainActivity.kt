@@ -27,4 +27,19 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         showMessage("on resume method is called")
     }
+
+    override fun onPause() {
+        super.onPause()
+        showMessage("on pause method is called ")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        showMessage("On stop method is called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        showMessage("On destroy method is called")
+    }
 }
